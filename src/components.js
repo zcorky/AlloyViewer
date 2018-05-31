@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 const PRELOADNUM = 3;
 
-export class CenterImage extends Component {
+export class CenterImage extends PureComponent {
     state = {
         loading: true,
         error: false,
