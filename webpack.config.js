@@ -9,7 +9,7 @@ var config = {
     externals: {
         "react": "react",
         "react-dom": "react-dom",
-        "react-singleton": "react-singleton"
+        "prop-types": "prop-types"
     },
     module: {
         loaders: [
@@ -34,7 +34,7 @@ var config = {
         ]
     },
     output: {
-        path: 'dist/',
+        path: 'lib/',
         library: 'react-imageview',
         libraryTarget: 'commonjs2'
     },
