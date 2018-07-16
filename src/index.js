@@ -56,7 +56,7 @@ class ImageView extends PureComponent {
   list = null;
   ob = null;
   focused = null;
-  refs = {};
+  // refs = {};
 
   arrLength = this.props.imagelist.length;
   state = {
@@ -328,7 +328,7 @@ class ImageView extends PureComponent {
         Transform(this.ob);
       }
       // ease hide page number
-      const page = this.refs.page;
+      const page = this.page;
       if (page) {
         page.classList.remove("hide");
         setTimeout(() => {
@@ -338,7 +338,7 @@ class ImageView extends PureComponent {
     });
   }
 
-  refPage = ref => (this.refs.page = ref);
+  refPage = ref => (this.page = ref);
 
   changeIndex(current, ease = true) {
     ease && (this.list.style.webkitTransition = "300ms ease");
