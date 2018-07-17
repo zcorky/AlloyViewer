@@ -1,0 +1,22 @@
+# @Author: Zero
+# @Email: uniquecolesmith@gmail.com
+# @License: MIT
+# @Copyright: Eason(uniquecolesmith@gmail.com)
+
+language: node_js
+node_js:
+  - 8
+
+after_success: npm run build
+
+jobs:
+  include:
+    - stage: npm release
+      node_js: 8
+      script: echo "Deploying to npm"
+      deploy:
+        provider: npm
+        email: uniquecolesmith@gmail.com
+        api_key: $NPM_API_KEY
+        on:
+          tags: true
