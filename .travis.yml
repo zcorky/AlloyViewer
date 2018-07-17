@@ -18,6 +18,7 @@ jobs:
         provider: npm
         email: uniquecolesmith@gmail.com
         api_key: $NPM_API_KEY
+        skip_cleanup: true
         on:
           tags: true
           all_branches: true
