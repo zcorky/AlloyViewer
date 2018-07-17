@@ -1,6 +1,6 @@
 {
   "name": "@zcorky/react-gallery",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A image viewer built with react",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
